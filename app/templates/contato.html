@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Contato{% endblock %}
+
+{% block content %}
+<div class="container contact-page">
+    <div class="contact-content">
+        <h1>Entre em Contato</h1>
+        <p class="subtitle">Estamos ansiosos para ouvir sobre o seu grande dia.</p>
+        
+        <div class="contact-info">
+            <p class="location">Itu - SP</p>
+            <p class="phone">(11) 95198-9535</p>
+        </div>
+        
+        <div class="whatsapp-action">
+            <a href="{{ link_whatsapp }}" target="_blank" class="btn-whatsapp">
+                Iniciar Conversa no WhatsApp
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

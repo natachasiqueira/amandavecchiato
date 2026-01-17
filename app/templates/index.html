@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}Sobre{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="hero-grid">
+        <div class="profile-frame">
+            <img src="{{ url_for('static', filename='img/AmandaVecchiatoPerfil.png') }}" alt="Amanda Vecchiato" class="profile-img">
+        </div>
+        <div class="hero-text">
+            <h1>Amanda Vecchiato</h1>
+            <p>Cerimonialista e assessoria de eventos com elegância, precisão e tranquilidade.</p>
+            <div class="hero-actions">
+                <a href="{{ link_whatsapp }}" target="_blank" class="btn-whatsapp">Fale comigo</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section card-3d">
+        <h2>Sobre Mim</h2>
+        <p>Acredito que um casamento é a celebração de uma história única, um marco que exige não apenas paixão, mas uma execução impecável. Com mais de 10 anos de trajetória em Itu e região, dedico minha experiência a cuidar de cada detalhe para que o caminho até o altar seja tão leve e prazeroso quanto o momento da celebração.</p>
+    </section>
+
+    <section class="home-section card-3d">
+        <h2>A Maestria de Realizar Casamentos</h2>
+        <p>Para mim, organizar um casamento é a arte de equilibrar sonhos e logística. Meu foco é total na tranquilidade dos noivos: entendo que, para vocês viverem esse dia com plenitude, precisam de alguém em quem confiar cegamente nos bastidores.</p>
+        <p>Ao longo desta década, desenvolvi um método de assessoria próxima e personalizada, onde atuo desde a curadoria estratégica dos melhores fornecedores até a gestão minuciosa do cronograma. Meu compromisso é garantir que a identidade de vocês esteja presente em cada detalhe, com a sofisticação e o cuidado que uma assinatura de 10 anos de mercado proporciona.</p>
+    </section>
+
+    <section class="home-section card-3d">
+        <h2>Versatilidade e Rigor Técnico</h2>
+        <p>Embora os casamentos sejam o centro do meu trabalho, minha expertise se estende à produção de eventos corporativos e projetos artísticos. A mesma seriedade e o olhar detalhista que aplico no altar são levados para o ambiente empresarial e cultural. Realizo produções que exigem alto rigor logístico e visão estratégica, garantindo que grandes marcas e expressões artísticas alcancem seus objetivos com absoluta excelência.</p>
+    </section>
+
+    <section class="home-section card-3d">
+        <h2>Meu Compromisso</h2>
+        <p>Seja conduzindo o dia mais importante da sua vida pessoal ou produzindo um evento de grande escala, meu foco é ser o suporte de confiança onde você pode se apoiar.</p>
+        <br>
+        <p><b>Planejamento Dedicado:</b> Curadoria estratégica de fornecedores e gestão minuciosa de cronogramas.</p>
+        <p><b>Execução com Excelência:</b> Presença ativa nos bastidores, resolvendo cada desafio com discrição e agilidade.</p>
+        <p><b>Tranquilidade Real:</b> Minha meta é que, no dia do evento, a sua única função seja viver o momento.</p>
+        <p><b>Resultado:</b> Momentos que se tornam memórias impecáveis.</p>
+    </section>
+</div>
+{% endblock %}

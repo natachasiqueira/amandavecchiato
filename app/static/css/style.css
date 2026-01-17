@@ -1,0 +1,398 @@
+:root {
+    /* Paleta de Cores baseada em Champanhe e Rosé Gold */
+    --color-champagne: #F7E7CE;
+    --color-champagne-light: #fbf6ec;
+    --color-rose-gold: #B76E79;
+    --color-rose-gold-dark: #965a63;
+    --color-text-dark: #4a4a4a;
+    --color-text-light: #7a7a7a;
+    --color-white: #ffffff;
+    --color-bg-light: #fafafa;
+
+    /* Tipografia */
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Lato', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg-light);
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    color: var(--color-rose-gold);
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+/* Header & Navbar */
+header {
+    background-color: var(--color-white);
+    box-shadow: 0 2px 10px rgba(183, 110, 121, 0.1); /* Sombra suave Rosé */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-img {
+    height: 60px; /* Ajuste conforme necessário para a imagem */
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    color: var(--color-text-dark);
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+    color: var(--color-rose-gold);
+    border-bottom: 2px solid var(--color-champagne);
+}
+
+/* Containers */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 5%;
+}
+
+/* Página de Contato */
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.contact-content {
+    background-color: var(--color-white);
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(183, 110, 121, 0.1);
+    border: 1px solid var(--color-champagne);
+    max-width: 600px;
+    width: 100%;
+}
+
+.subtitle {
+    color: var(--color-text-light);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.contact-info {
+    margin-bottom: 2.5rem;
+}
+
+.location, .phone {
+    font-size: 1.2rem;
+    color: var(--color-text-dark);
+    margin: 0.5rem 0;
+    font-weight: 300;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: var(--color-rose-gold);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(183, 110, 121, 0.3);
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--color-rose-gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(183, 110, 121, 0.4);
+    color: var(--color-white);
+}
+
+/* Página de Trabalhos (Realizações) */
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.portfolio-section {
+    margin-bottom: 4rem;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+/* Estilo Card 3D */
+.card-3d {
+    border: 1px solid var(--color-champagne);
+    box-shadow: 0 10px 20px rgba(183, 110, 121, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-3d:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(183, 110, 121, 0.2);
+}
+
+.section-info {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.section-info h2,
+.home-section h2 {
+    border-bottom: 2px solid var(--color-champagne);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+/* Carrossel */
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+    scrollbar-width: none; /* Firefox */
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 2rem;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.lightbox-image {
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 12px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-img {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-champagne-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    border: 1px dashed var(--color-rose-gold);
+}
+
+.carousel-btn {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid var(--color-champagne);
+    color: var(--color-rose-gold);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: var(--color-rose-gold);
+    color: var(--color-white);
+}
+
+.carousel-btn.prev {
+    left: -20px;
+}
+
+.carousel-btn.next {
+    right: -20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-champagne-light);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid var(--color-champagne);
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        margin-top: 1rem;
+        gap: 1.5rem;
+    }
+    
+    .contact-content {
+        padding: 2rem 1rem;
+    }
+    
+    .carousel-btn {
+        display: none; /* Esconde botões no mobile (scroll nativo é melhor) */
+    }
+    
+    .card-3d {
+        padding: 1rem;
+    }
+}
+
+/* Home - Hero */
+.hero-grid {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin: 2rem 0 3rem;
+}
+
+.profile-frame {
+    width: 280px;
+    height: 360px;
+    border-radius: clamp(24px, 4vw, 52px);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
+    background-color: var(--color-bg-light);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+.hero-text p {
+    color: var(--color-text-light);
+    margin: 0.5rem 0 1.5rem;
+}
+
+.hero-actions .btn-whatsapp {
+    font-size: 0.9rem;
+}
+
+/* Home - Seções */
+.home-section {
+    margin-bottom: 2rem;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .profile-frame {
+        margin: 0 auto 1rem;
+        width: 220px;
+        height: 300px;
+    }
+}

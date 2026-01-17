@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block title %}Realizações{% endblock %}
+
+{% block content %}
+<div class="container portfolio-page">
+    <div class="page-header">
+        <h1>Realizações</h1>
+        <p>Conheça a excelência e dedicação em cada detalhe dos eventos.</p>
+    </div>
+
+    <!-- Bloco Casamentos -->
+    <div class="portfolio-section card-3d">
+        <div class="section-info">
+            <h2>Casamentos</h2>
+            <p>O sonho do dia perfeito com uma assessoria completa e personalizada, cuidando de cada detalhe para que os noivos aproveitem cada momento sem preocupações.</p>
+        </div>
+        <div class="carousel-container">
+            <button class="carousel-btn prev" onclick="moveCarousel('casamento', -1)">&#10094;</button>
+            <div class="carousel-track" id="carousel-casamento">
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento01.jpg') }}" alt="Casamento 01"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento02.png') }}" alt="Casamento 02"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento03.png') }}" alt="Casamento 03"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento04.png') }}" alt="Casamento 04"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento05.png') }}" alt="Casamento 05"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento06.png') }}" alt="Casamento 06"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento07.jpg') }}" alt="Casamento 07"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento08.jpg') }}" alt="Casamento 08"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento09.jpg') }}" alt="Casamento 09"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento10.jpg') }}" alt="Casamento 10"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento11.jpg') }}" alt="Casamento 11"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento12.jpg') }}" alt="Casamento 12"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento13.jpg') }}" alt="Casamento 13"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento14.jpg') }}" alt="Casamento 14"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento15.jpg') }}" alt="Casamento 15"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento16.jpg') }}" alt="Casamento 16"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento17.jpg') }}" alt="Casamento 17"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento18.jpg') }}" alt="Casamento 18"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento19.jpg') }}" alt="Casamento 19"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/casamento/Casamento20.jpg') }}" alt="Casamento 20"></div>
+            </div>
+            <button class="carousel-btn next" onclick="moveCarousel('casamento', 1)">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Bloco Eventos Corporativos -->
+    <div class="portfolio-section card-3d">
+        <div class="section-info">
+            <h2>Eventos Corporativos</h2>
+            <p>Organização impecável para eventos empresariais, convenções e lançamentos de produtos, transmitindo a seriedade e o profissionalismo que sua marca merece.</p>
+        </div>
+        <div class="carousel-container">
+            <button class="carousel-btn prev" onclick="moveCarousel('corporativo', -1)">&#10094;</button>
+            <div class="carousel-track" id="carousel-corporativo">
+                <!-- Imagens Placeholder -->
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/corporativo/festim01.jpg') }}" alt="Corporativo 01"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/corporativo/festim02.jpg') }}" alt="Corporativo 02"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/corporativo/festim03.jpg') }}" alt="Corporativo 03"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/corporativo/festim04.jpg') }}" alt="Corporativo 04"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/corporativo/festim05.jpg') }}" alt="Corporativo 05"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/corporativo/festim06.jpg') }}" alt="Corporativo 06"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/corporativo/festim07.jpg') }}" alt="Corporativo 07"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/corporativo/festim08.jpg') }}" alt="Corporativo 08"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/corporativo/festim09.jpg') }}" alt="Corporativo 09"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/corporativo/festim10.jpg') }}" alt="Corporativo 10"></div>
+                <div class="carousel-slide"><img src="{{ url_for('static', filename='img/corporativo/festim11.jpg') }}" alt="Corporativo 11"></div>
+            </div>
+            <button class="carousel-btn next" onclick="moveCarousel('corporativo', 1)">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Bloco Parcerias -->
+    <div class="portfolio-section card-3d">
+        <div class="section-info">
+            <h2>Parcerias</h2>
+            <p><b>Festim Brasil</b> - Tábuas, cestas, box, terrines e eventos  ☎️ (11) 99914-7001</p>
+            <p><b>Parceria em Eventos</b> - Assessoria de eventos corporativos, sociais e culturais. ☎️ (11) 99914-7001</p>
+        </div>
+
+<script>
+    function moveCarousel(id, direction) {
+        const track = document.getElementById('carousel-' + id);
+        const slideWidth = track.querySelector('.carousel-slide').offsetWidth;
+        track.scrollBy({ left: direction * slideWidth, behavior: 'smooth' });
+    }
+</script>
+{% endblock %}
