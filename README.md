@@ -39,7 +39,7 @@ O site gera automaticamente um link de WhatsApp no formato:
 https://wa.me/SEU_NUMERO?text=MENSAGEM_URL_ENCODED
 ```
 
-- O número vem da variável de ambiente `WHATSAPP_NUMBER` (ex.: `5511951989535`).
+- O número vem da variável de ambiente `WHATSAPP_NUMBER` (ex.: `5511999999999`).
 - A mensagem é personalizada conforme a origem de quem clicou, usando o parâmetro `utm_source` na URL do site.
 
 ### Onde isso é feito
@@ -75,9 +75,9 @@ Assim, você NÃO precisa manter links diferentes de WhatsApp manualmente; basta
 Se preferir, você pode usar diretamente um link do WhatsApp em cada plataforma, com mensagens específicas. Exemplo:
 
 - Instagram:
-  - `https://wa.me/5511951989535?text=Ol%C3%A1!%20Vi%20seu%20trabalho%20no%20Instagram%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.`
+  - `https://wa.me/5511999999999?text=Ol%C3%A1!%20Vi%20seu%20trabalho%20no%20Instagram%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.`
 - Facebook:
-  - `https://wa.me/5511951989535?text=Ol%C3%A1!%20Vi%20sua%20p%C3%A1gina%20no%20Facebook%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.`
+  - `https://wa.me/5511999999999?text=Ol%C3%A1!%20Vi%20sua%20p%C3%A1gina%20no%20Facebook%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.`
 
 Essa opção exige que você edite manualmente os textos, enquanto a abordagem via site com `utm_source` automatiza tudo.
 
